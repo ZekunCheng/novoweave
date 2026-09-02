@@ -26,4 +26,6 @@ def rank_candidates(
     """
     if len(candidates) != len(scorecards):
         raise ValueError("Each candidate must have exactly one scorecard")
-    raise NotImplementedError("Ranking policy requires an explicit validated specification")
+    raise NotImplementedError(
+        "Ranking policy requires an explicit validated specification"
+    )

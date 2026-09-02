@@ -20,9 +20,10 @@ class ConceptualTrainer:
 
     def fit(self, model: Any, data_module: Any, manifest: TrainingManifest) -> None:
         """Planned loop: validate provenance, train, evaluate, checkpoint, audit."""
-        raise NotImplementedError("Training logic and datasets are intentionally absent")
+        raise NotImplementedError(
+            "Training logic and datasets are intentionally absent"
+        )
 
     def evaluate(self, model: Any, data_module: Any) -> dict[str, float]:
         """Planned held-out evaluation with uncertainty and subgroup reporting."""
         raise NotImplementedError("Benchmark definitions are intentionally absent")
-

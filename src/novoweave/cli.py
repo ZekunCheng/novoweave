@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+from typing import Annotated
 
 import typer
 
@@ -26,8 +27,8 @@ def validate_config(path: Path) -> None:
 
 @app.command()
 def design(
-    config: Path = typer.Option(..., exists=True, dir_okay=False),
-    brief: Path = typer.Option(..., exists=True, dir_okay=False),
+    config: Annotated[Path, typer.Option(exists=True, dir_okay=False)],
+    brief: Annotated[Path, typer.Option(exists=True, dir_okay=False)],
 ) -> None:
     """Document the planned command while refusing to imply functionality."""
     _ = (config, brief)

@@ -26,7 +26,10 @@ class DesignBrief:
             raise ValueError("Conceptual length must be between 20 and 2000")
         if not self.objective.strip():
             raise ValueError("Objective must not be empty")
-        if any(position < 1 or position > self.length for position in self.fixed_positions):
+        if any(
+            position < 1 or position > self.length
+            for position in self.fixed_positions
+        ):
             raise ValueError("Fixed positions must use one-based indices within length")
 
 
@@ -87,4 +90,3 @@ class CandidateEvaluator(Protocol):
     """Contract for auditable in-silico evaluation adapters."""
 
     def score(self, candidate: SequenceCandidate) -> dict[str, float]: ...
-
