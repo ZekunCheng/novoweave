@@ -1,0 +1,23 @@
+schema_version: "1.0"
+project_name: "conceptual-novoweave-run"
+seed: 7
+
+backbone:
+  component: "geometric_diffusion_placeholder"
+  num_steps: 200
+  coordinate_scale: 1.0
+
+sequence:
+  component: "structure_conditioned_transformer_placeholder"
+  temperature: 0.8
+  num_candidates: 16
+
+evaluation:
+  metrics:
+    - geometry_confidence_placeholder
+    - sequence_diversity_placeholder
+  require_human_review: true
+
+output:
+  directory: "artifacts/example"
+  save_intermediates: false

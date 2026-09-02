@@ -1,0 +1,26 @@
+name: Feature request
+description: Propose a scoped interface or documentation improvement
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Research or engineering problem
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed contract
+      description: Include assumptions, validation strategy, and failure modes.
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope check
+      options:
+        - label: I have separated conceptual behavior from implemented capability.
+          required: true
+

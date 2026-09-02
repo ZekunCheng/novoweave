@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this conceptual blueprint, please cite it as software."
+title: "NovoWeave: A Conceptual Generative Protein-Design Framework"
+type: software
+version: 0.1.0
+date-released: 2026-09-02
+authors:
+  - family-names: "Cheng"
+    given-names: "Zekun"
+license: MIT
+repository-code: "https://github.com/ZekunCheng/novoweave"
+abstract: >-
+  A non-functional, research-oriented software blueprint for organizing a
+  deep-learning workflow for de novo protein design.

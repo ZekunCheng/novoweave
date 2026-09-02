@@ -1,0 +1,9 @@
+name: "teaching-example"
+length: 120
+objective: "Demonstrate the configuration contract; no biological function implied"
+symmetry: null
+fixed_positions: []
+metadata:
+  purpose: "documentation"
+  non_functional: true
+
